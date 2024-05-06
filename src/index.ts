@@ -5,6 +5,7 @@ import express from 'express';
 import cors from 'cors';
 import config from '@/config';
 import publicRoutes from '@/routes/public';
+import { Request, Response } from 'express';
 
 const app = express();
 
@@ -15,7 +16,7 @@ app.options('*', cors());
 
 app.use('/', publicRoutes);
 
-app.get('/ping', (req, res) => {
+app.get('/ping', (req: Request, res: Response) => {
     res.send('pong 🏓');
 });
 
