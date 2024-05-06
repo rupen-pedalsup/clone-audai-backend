@@ -1,0 +1,7 @@
+dist
+build
+/coverage
+/node_module
+charting_library
+/charting_library
+/.vscode
